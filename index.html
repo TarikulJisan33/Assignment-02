@@ -4,17 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">.
   <!-- tailwind cdn -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- font awesome cdn -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papNM8m+z+1KOZ6+KLzI0fJ1mO+oUJ5MQiYxP0S+f0PMSIDF5Zl3Z9d2zE5xK4s9GukTdzZnVWZ3DgkPjjrKGQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          notoserif: ['"Noto Serif"', 'serif'],
+        }
+      }
+    }
+  }
+</script>
+
+
 
   <!-- noto serif font cdn -->
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="mx-auto container ">
+<body class="mx-auto container font-notoserif">
  <header>
      <section class="ml-4 mr-2">
     <nav class="flex items-center justify-between">
@@ -222,7 +235,7 @@
       <!-- input section -->
        <section class="relative mb-10">
          <div class="">
-            <img src="assets/news-letter-bg.png" alt="">
+            <img class="mx-auto" src="assets/news-letter-bg.png" alt="">
          </div>
          <div class="absolute bottom-6 left-16 md:bottom-48 md:left-[500px]">
             <h1 class="md:text-4xl text-xl text-center text-white font-semibold pb-6">Join the Colorful Bunch</h1>
